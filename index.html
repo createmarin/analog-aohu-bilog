@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サービス終了と移転のお知らせ | クリエイティブスタジオ眞凛</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #2b39fb; /* 画像の青背景と統一 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 960px; /* 画像の解像度に合わせて自動調整 */
+    }
+    .notice-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    /* 画像内のリンクURL部分を透明ボタン化 */
+    .link-overlay {
+      position: absolute;
+      top: 48%;    /* 縦位置の調整 */
+      left: 10%;   /* 横位置の調整 */
+      width: 80%;  /* 幅の調整 */
+      height: 15%; /* 高さの調整 */
+      display: block;
+      text-indent: -9999px; /* テキスト隠し */
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- アップロードした案内の画像パスを指定 -->
+    <img src="notice-bilog.png" alt="ご覧の「×ブログ」のサービスは8月31日19時に終了しました。今後は「Bilog」でお楽しみください。 https://bilog.csmarin.com" class="notice-img">
+    
+    <!-- 移転先への透明リンクバー -->
+    <a href="https://bilog.csmarin.com" class="link-overlay" target="_blank" rel="noopener noreferrer">Bilogへ移動</a>
+  </div>
+
+</body>
+</html>
