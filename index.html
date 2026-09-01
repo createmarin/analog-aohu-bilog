@@ -21,22 +21,22 @@
     .container {
       position: relative;
       width: 100%;
-      max-width: 960px; /* 画像の解像度に合わせて自動調整 */
+      max-width: 960px;
     }
     .notice-img {
       width: 100%;
       height: auto;
       display: block;
     }
-    /* 画像内のリンクURL部分を透明ボタン化 */
+    /* 画像内のURL（https://bilog.csmarin.com）に重ねる透明リンク */
     .link-overlay {
       position: absolute;
-      top: 48%;    /* 縦位置の調整 */
-      left: 10%;   /* 横位置の調整 */
-      width: 80%;  /* 幅の調整 */
-      height: 15%; /* 高さの調整 */
+      top: 52%;    /* URL文字の縦位置 */
+      left: 12%;   /* 横位置 */
+      width: 76%;  /* クリック範囲の幅 */
+      height: 10%; /* クリック範囲の高さ */
       display: block;
-      text-indent: -9999px; /* テキスト隠し */
+      text-indent: -9999px;
       z-index: 10;
     }
   </style>
@@ -44,7 +44,7 @@
 <body>
 
   <div class="container">
-    <!-- アップロードした案内の画像パスを指定 -->
+    <!-- GitHub内の同階層にある画像を直接参照 -->
     <img src="notice-bilog.png" alt="ご覧の「×ブログ」のサービスは8月31日19時に終了しました。今後は「Bilog」でお楽しみください。 https://bilog.csmarin.com" class="notice-img">
     
     <!-- 移転先への透明リンクバー -->
